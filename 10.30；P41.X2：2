@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(int argc,char const*argv[])
+{
+    float charge,cost;
+    printf("Enter dianling:\n") ; 
+    scanf("%f",&charge);
+    if(charge<=50){
+         cost=0.53*charge;
+    }else{
+        cost=50*0.53+0.58*(charge-50); }
+    printf("cost=%f.\n",cost);
+    
+    return 0;
+} 
